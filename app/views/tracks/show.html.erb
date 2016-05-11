@@ -1,0 +1,55 @@
+<h4><span class="label label-default">Pronađene pjesme:</span></h4>
+
+<br>
+
+<% if @searched_tracks.empty? then %>
+    <h5><strong> Nije pronađen nijedan zapis.</strong></h5>
+<% else %>
+
+
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4><span >Naslov</span></h4>
+          </div>
+          <div class="col-sm-3">
+            <h4><span >Autor</span></h4>
+          </div>
+          <div class="col-sm-3">
+            <h4><span >Trajanje</span></h4>
+          </div>
+          <div class="col-sm-3">
+          </div>
+        </div>
+      </li>
+
+      <% @searched_tracks.each do |track| %>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-sm-3">
+                <span class="glyphicon glyphicon-music"></span>
+                <%=link_to track.name, {:controller => "tracks", :action => :details, :track_id => track.id}, {:method => :post }%>
+              </div>
+              <div class="col-sm-3">
+                <%= track.author %>
+              </div>
+              <div class="col-sm-3">
+                <%= track.minute %> m <%= track.sekunde %> s
+              </div>
+              <div class="col-sm-3">
+                <% if current_user.uloga == 3 then %>
+                    <%= link_to "Dodaj pjesmu", {:controller => "listazeljas", :action => :add, :track_index => track.id},class:"btn btn-success" %>
+                <% elsif current_user.uloga == 2 then %>
+                    <%= link_to "Dodaj pjesmu", {:controller => "playlists", :action => :add, :track_index => track.id},class:"btn btn-success" %>
+                <% elsif current_user.uloga == 1 then %>
+                    <%= link_to "Obriši pjesmu", { :controller => "tracks", :action => "delete", :id_delete => track.id},class:"btn btn-danger" %>
+                <% end %>
+              </div>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+
+    <%= link_to "Povratak na pretragu", 'search',class:"btn btn-primary" %>
+<% end %>

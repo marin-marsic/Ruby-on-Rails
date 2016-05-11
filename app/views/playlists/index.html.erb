@@ -1,0 +1,67 @@
+<h4><span class="label label-default">Playlist</span></h4>
+<br>
+
+<h5> Trenutna dužina liste: <em> <%= @vrijeme/60 %> minuta i <%= @vrijeme - (@vrijeme/60)*60 %> sekundi.</em></h5>
+<p><i><b>Napomena: </b> Playlista kraća od sat vremena će se ponavljati unutar svog termina, dok će se playlista duža od sat vremena prekinuti kada njen termin završi.</i></p>
+<p>
+
+<ul class="list-group">
+  <% @pjesmePlaylist.each do |zapis| %>
+      <li class="list-group-item">
+        <div class="row">
+          <% @name = zapis.author + " - " + zapis.name %>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-music"></span>
+            <%= link_to @name, {:controller => "tracks", :action => "details", :track_id => zapis.id} %>
+          </div>
+          <div class="col-sm-4">
+            <%= zapis.minute %> m <%= zapis.sekunde %> s
+          </div>
+          <% if !@potvrden then %>
+              <div class="col-sm-4">
+                <%= link_to "Izbriši", {:controller => "playlists", :action => "delete", :id_delete => zapis.id},class:"btn btn-danger" %>
+              </div>
+          <% end %>
+
+        </div>
+      </li>
+  <% end %>
+  <% if @potvrden then %>
+      Playlista je potvrđena.
+
+  <% else %>
+      <br>
+      <div class="row">
+        <% if not @prevec then %>
+            <div class="col-sm-3">
+              <%= link_to "Dodaj pjesmu na playlistu", {:controller => "tracks", :action => "search"},class:"btn btn-primary" %>
+            </div>
+            <div class="col-sm-3">
+              <%= link_to "Pogledaj želje korisnika", {:controller => "playlists", :action => :get_zelje},class:"btn btn-primary" %>
+            </div>
+        <% end %>
+        <div class="col-sm-3">
+          <%= link_to "Potvrdi playlistu", {:controller => "playlists", :action => "potvrdi"},class:"btn btn-success"%>
+
+        </div>
+      </div>
+
+      </ul>
+  <% end %>
+
+
+
+  <%= link_to "Vrati se na popis playlista", {:controller => "playlists", :action => "show"},class:"btn btn-primary" %>
+
+
+
+
+
+
+
+
+
+
+
+
+

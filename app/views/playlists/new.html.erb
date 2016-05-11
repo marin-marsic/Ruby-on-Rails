@@ -1,0 +1,8 @@
+<h3> Nova playlista </h3>
+
+Izaberite datum izvođenja nove playliste: <p><p>
+<%= form_tag('create', :method => "post") do %>
+<%= date_select("date", "written", default: 1.days.from_now, order: [:day, :month, :year],start_year: 2016,  :discard_hours => true) %>
+<p><p>
+<%= submit_tag("Gotovo") %>
+<% end %>

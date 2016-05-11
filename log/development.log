@@ -1,0 +1,5386 @@
+
+
+Started GET "/" for ::1 at 2015-12-28 15:36:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (641.3ms)
+
+
+Started GET "/" for ::1 at 2015-12-28 15:37:07 +0100
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (560.9ms)
+
+
+Started GET "/" for ::1 at 2015-12-28 15:37:11 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (558.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateListaZeljas (20151223182607)
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at E:/OPP/grupa123/db/migrate/20151223182607_create_lista_zeljas.rb:6)
+  [1m[35m (136.8ms)[0m  CREATE TABLE `lista_zeljas` (`id` int(11) auto_increment PRIMARY KEY, `id_korisnik` int(11), `potvrden` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151223182607')
+  [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCuvaZapis (20151223191735)
+  [1m[35m (69.9ms)[0m  CREATE TABLE `cuva_zapis` (`id` int(11) auto_increment PRIMARY KEY, `id_lista` int(11), `mjesto` int(11), `id_zapis` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (80.0ms)[0m  [1mCREATE  INDEX `index_cuva_zapis_on_id_lista`  ON `cuva_zapis` (`id_lista`) [0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151223191735')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (1.5ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'radio_development'
+  AND fk.table_name = 'cuva_zapis'
+
+  [1m[36m (0.0ms)[0m  [1mSHOW CREATE TABLE `cuva_zapis`[0m
+  [1m[35m (0.0ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'radio_development'
+  AND fk.table_name = 'lista_zeljas'
+
+  [1m[36m (0.0ms)[0m  [1mSHOW CREATE TABLE `lista_zeljas`[0m
+  [1m[35m (0.0ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'radio_development'
+  AND fk.table_name = 'tracks'
+
+  [1m[36m (0.0ms)[0m  [1mSHOW CREATE TABLE `tracks`[0m
+  [1m[35m (1.0ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'radio_development'
+  AND fk.table_name = 'users'
+
+  [1m[36m (0.0ms)[0m  [1mSHOW CREATE TABLE `users`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'root@root.hr' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+
+
+Started GET "/" for ::1 at 2015-12-28 15:40:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (93.6ms)
+  Rendered main/home.html.erb within layouts/application (106.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (25.0ms)
+  Rendered layouts/_header.html.erb (72.5ms)
+Completed 200 OK in 12442ms (Views: 12414.9ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:40:31 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:40:32 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:40:32 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:40:32 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:40:32 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:40:32 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:40:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:40:32 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:40:32 +0100
+
+
+Started GET "/users/1" for ::1 at 2015-12-28 15:40:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (12.1ms)
+Completed 200 OK in 209ms (Views: 205.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/listazeljas/index?user_id=1" for ::1 at 2015-12-28 15:40:37 +0100
+Processing by ListazeljasController#index as HTML
+  Parameters: {"authenticity_token"=>"ZtKwwmrV4PqUbTCjSwXXNq4p1Mvrif/wwLGh8zMmAJiE9UlNeg4k1+bIH54+NYZWJWydgrMB8xITWUsG2LZd6g==", "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (38.2ms)[0m  [1mINSERT INTO `lista_zeljas` (`id_korisnik`, `created_at`, `updated_at`) VALUES (1, '2015-12-28 14:40:37', '2015-12-28 14:40:37')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36mCuvaZapi Load (0.0ms)[0m  [1mSELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1[0m
+  Rendered listazeljas/index.html.erb within layouts/application (2.0ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 523ms (Views: 177.4ms | ActiveRecord: 47.7ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:40:38 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:40:39 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 185ms (Views: 184.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:40:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:40:40 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 15:40:44 +0100
+Processing by MainController#home as HTML
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16[0m
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (124.1ms)
+  Rendered main/home.html.erb within layouts/application (132.1ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (22.1ms)
+Completed 200 OK in 298ms (Views: 298.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-12-28 15:40:51 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 178ms (Views: 178.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/listazeljas/index?user_id=1" for ::1 at 2015-12-28 15:40:52 +0100
+Processing by ListazeljasController#index as HTML
+  Parameters: {"authenticity_token"=>"0Exm4/R507lNnhRkf2nGUg1kR8sjr/5NNWRzQl7TNH0ya59s5KIXlD87O1kKWZcyhiEOgnsn8q/mjJm3tUNpDw==", "user_id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (1.0ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Load (0.0ms)[0m  SELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1
+  Rendered listazeljas/index.html.erb within layouts/application (1.0ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+Completed 200 OK in 213ms (Views: 204.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:40:52 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:40:53 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 180ms (Views: 179.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:40:54 +0100
+
+
+Started POST "/tracks/show" for ::1 at 2015-12-28 15:40:57 +0100
+Processing by TracksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QEv7Hi7EdnUWHM7mRmOnB63MBucYA39v4vAtst1hY5+ibAKRPh+yWGS54dszU/ZnJolPrkCLc40xGMdHNvE+7Q==", "search"=>"name", "q"=>"42", "commit"=>"Search"}
+  [1m[35m (29.0ms)[0m  SELECT COUNT(*) FROM `tracks` WHERE `tracks`.`name` = '42'
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT `tracks`.* FROM `tracks` WHERE `tracks`.`name` = '42'[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/show.html.erb within layouts/application (42.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 268ms (Views: 236.5ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:40:57 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:40:57 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:40:57 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:40:57 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:40:57 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:40:57 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:40:57 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:40:58 +0100
+
+
+Started POST "/tracks/details?track_id=4" for ::1 at 2015-12-28 15:41:01 +0100
+Processing by TracksController#details as HTML
+  Parameters: {"authenticity_token"=>"4zfE2cZlY6nzVZpNZw6onX3JkBPwraga+A58dqzvY5QBED1W1r6nhIHwtXASPvn99ozZWqglpPgr5paDR38+5g==", "track_id"=>"4"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  Rendered tracks/details.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 183ms (Views: 180.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:01 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:01 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:01 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:01 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:01 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:01 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:01 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:02 +0100
+
+
+Started GET "/listazeljas/add?track_index=4" for ::1 at 2015-12-28 15:41:04 +0100
+Processing by ListazeljasController#add as HTML
+  Parameters: {"track_index"=>"4"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (0.0ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Exists (1.0ms)[0m  SELECT  1 AS one FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1 AND `cuva_zapis`.`id_zapis` = 4 LIMIT 1
+  [1m[36mCuvaZapi Load (0.0ms)[0m  [1mSELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO `cuva_zapis` (`id_lista`, `mjesto`, `id_zapis`, `created_at`, `updated_at`) VALUES (1, 0, 4, '2015-12-28 14:41:04', '2015-12-28 14:41:04')[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (7.0ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 208ms (Views: 182.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:04 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:04 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:04 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:04 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:05 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:41:08 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 180ms (Views: 181.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/show" for ::1 at 2015-12-28 15:41:17 +0100
+Processing by TracksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZY7AZ5pRhIZxuljJOzcRUeC9JXwg169vnyHbG1tG03SHqTnoiopAqwMfd/ROB0Axa/hsNXhfo41MyTHusNaOBg==", "search"=>"name", "q"=>"yes", "commit"=>"Search"}
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `tracks` WHERE `tracks`.`name` = 'yes'[0m
+  Rendered tracks/show.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+Completed 200 OK in 191ms (Views: 187.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:17 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:41:19 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 183ms (Views: 180.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:19 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:20 +0100
+
+
+Started POST "/tracks/show" for ::1 at 2015-12-28 15:41:23 +0100
+Processing by TracksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+tOpVtgZe1MkAERfElFsA0E9DnrYG9K+iy9q2b9I5nYY9FDZyMK/flala2JnYT1jynhHM4CT3lxYx4AsVNi7BA==", "search"=>"name", "q"=>"yes!", "commit"=>"Search"}
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `tracks` WHERE `tracks`.`name` = 'yes!'
+  Rendered tracks/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 178ms (Views: 177.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:23 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:23 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:23 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:23 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:23 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:23 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:23 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:24 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:41:25 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+Completed 200 OK in 182ms (Views: 181.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:25 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 15:41:28 +0100
+Processing by MainController#home as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (127.5ms)
+  Rendered main/home.html.erb within layouts/application (129.5ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 300ms (Views: 297.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-12-28 15:41:39 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.1ms)
+Completed 200 OK in 176ms (Views: 174.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/listazeljas/index?user_id=1" for ::1 at 2015-12-28 15:41:40 +0100
+Processing by ListazeljasController#index as HTML
+  Parameters: {"authenticity_token"=>"RyJqULVIy8OWwT/2+UK37al953f2ZzhtMDtif6rMemSlBZPfpZMP7uRkEMuMcuaNIjiuPq7vNI/j04iKQVwnFg==", "user_id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (1.0ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Load (0.0ms)[0m  SELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (7.0ms)
+  Rendered auxiliary/_login_modal.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+Completed 200 OK in 194ms (Views: 185.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:40 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:41:41 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (11.0ms)
+Completed 200 OK in 179ms (Views: 178.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:41 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:41 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:42 +0100
+
+
+Started POST "/tracks/show" for ::1 at 2015-12-28 15:41:44 +0100
+Processing by TracksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7036j7xnCe/xL9b5YH3aw+uvjA5hTEiIeQ2CE67zFKoNagMArLzNwoOK+cQVTYujYOrFRznERGqq5WjmRWNJ2A==", "search"=>"name", "q"=>"Lost", "commit"=>"Search"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `tracks` WHERE `tracks`.`name` = 'Lost'[0m
+  Rendered tracks/show.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 182ms (Views: 180.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:45 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:41:46 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 188ms (Views: 187.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:47 +0100
+
+
+Started POST "/tracks/show" for ::1 at 2015-12-28 15:41:50 +0100
+Processing by TracksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"moz76la2goWyRPSuoQ0vjDpI7Fitf9LwT03HwdtOIcB4qwJlRm1GqMDh25PUPX7ssQ2lEfX33hKcpS00MN58sg==", "search"=>"name", "q"=>"Lost!", "commit"=>"Search"}
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `tracks` WHERE `tracks`.`name` = 'Lost!'
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT `tracks`.* FROM `tracks` WHERE `tracks`.`name` = 'Lost!'[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/show.html.erb within layouts/application (10.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.5ms)
+Completed 200 OK in 191ms (Views: 188.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:50 +0100
+
+
+Started POST "/tracks/details?track_id=1" for ::1 at 2015-12-28 15:41:53 +0100
+Processing by TracksController#details as HTML
+  Parameters: {"authenticity_token"=>"jrI44CLjr/gxGi5AK4OxZjzY2JUReHozHsLhOBT91J9slcFvMjhr1UO/AX1es+AGt52R3EnwdtHNKgvN/22J7Q==", "track_id"=>"1"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1[0m
+  Rendered tracks/details.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+Completed 200 OK in 214ms (Views: 210.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:53 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:54 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:54 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:54 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:54 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:54 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:54 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:54 +0100
+
+
+Started GET "/listazeljas/add?track_index=1" for ::1 at 2015-12-28 15:41:54 +0100
+Processing by ListazeljasController#add as HTML
+  Parameters: {"track_index"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (0.0ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Exists (1.0ms)[0m  SELECT  1 AS one FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1 AND `cuva_zapis`.`id_zapis` = 1 LIMIT 1
+  [1m[36mCuvaZapi Load (0.0ms)[0m  [1mSELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO `cuva_zapis` (`id_lista`, `mjesto`, `id_zapis`, `created_at`, `updated_at`) VALUES (1, 1, 1, '2015-12-28 14:41:54', '2015-12-28 14:41:54')[0m
+  [1m[35m (7.0ms)[0m  COMMIT
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (13.0ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+Completed 200 OK in 218ms (Views: 190.8ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:41:55 +0100
+
+
+Started GET "/listazeljas/potvrdi" for ::1 at 2015-12-28 15:42:00 +0100
+Processing by ListazeljasController#potvrdi as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (0.2ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Load (0.0ms)[0m  SELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (8.0ms)
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 196ms (Views: 193.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/listazeljas/potvrdi" for ::1 at 2015-12-28 15:42:04 +0100
+Processing by ListazeljasController#potvrdi as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (1.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (1.0ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Load (1.0ms)[0m  SELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (23.6ms)
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 205ms (Views: 200.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:42:06 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 172ms (Views: 173.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/show" for ::1 at 2015-12-28 15:42:10 +0100
+Processing by TracksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ts3pUTCCSVbZyz1NXao+CReKuYheM/D0Swxg5Mt/RIVU6hDeIFmNe6tuEnAomm9pnM/wwQa7/BaY5IoRIO8Z9w==", "search"=>"name", "q"=>"42", "commit"=>"Search"}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `tracks` WHERE `tracks`.`name` = '42'
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT `tracks`.* FROM `tracks` WHERE `tracks`.`name` = '42'[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/show.html.erb within layouts/application (9.5ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 192ms (Views: 190.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:42:10 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:42:11 +0100
+
+
+Started POST "/tracks/details?track_id=4" for ::1 at 2015-12-28 15:42:12 +0100
+Processing by TracksController#details as HTML
+  Parameters: {"authenticity_token"=>"gzjPsrwljPrYiVwA6k4zPSZdmt/4xMgPh3w5P4CMtVhhHzY9rP5I16oscz2ffmJdrRjTlqBMxO1UlNPKaxzoKg==", "track_id"=>"4"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  Rendered tracks/details.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 186ms (Views: 183.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:42:12 +0100
+
+
+Started GET "/listazeljas/add?track_index=4" for ::1 at 2015-12-28 15:42:13 +0100
+Processing by ListazeljasController#add as HTML
+  Parameters: {"track_index"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (1.0ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Exists (0.0ms)[0m  SELECT  1 AS one FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1 AND `cuva_zapis`.`id_zapis` = 4 LIMIT 1
+  [1m[36mCuvaZapi Load (0.0ms)[0m  [1mSELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1[0m
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (12.0ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 201ms (Views: 190.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:42:13 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 15:42:17 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (103.9ms)
+  Rendered main/home.html.erb within layouts/application (110.9ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 287ms (Views: 294.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-12-28 15:42:21 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (21.1ms)
+Completed 200 OK in 177ms (Views: 174.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-12-28 15:42:22 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (107.6ms)
+  Rendered main/home.html.erb within layouts/application (113.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 291ms (Views: 298.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-12-28 15:42:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 158ms (Views: 170.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/listazeljas/index?user_id=1" for ::1 at 2015-12-28 15:42:35 +0100
+Processing by ListazeljasController#index as HTML
+  Parameters: {"authenticity_token"=>"wvSo1Ec+ar5PeoPWMIgXKiXWiuTt0x3tiIIWY1UiY9og01FbV+Wukz3frOtFuEZKrpPDrbVbEQ9bavyWvrI+qA==", "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Load (0.5ms)[0m  SELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mCuvaZapi Load (0.5ms)[0m  [1mSELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1[0m
+  [1m[35mTrack Load (0.5ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1
+  [1m[36mTrack Load (0.5ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (18.0ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 238ms (Views: 227.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:42:35 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:42:37 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 177ms (Views: 176.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:42:37 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:42:38 +0100
+
+
+Started POST "/tracks/show" for ::1 at 2015-12-28 15:42:40 +0100
+Processing by TracksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qjlvJ5kdjK0Ur/dymSb3ktSdFMiSNTWpqJpXE1LMc5VIHpaoicZIgGYK2E/sFqbyX9hdgcq9OUt7cr3muVwu5w==", "search"=>"name", "q"=>"Verona Dickens", "commit"=>"Search"}
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `tracks` WHERE `tracks`.`name` = 'Verona Dickens'[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT `tracks`.* FROM `tracks` WHERE `tracks`.`name` = 'Verona Dickens'
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/show.html.erb within layouts/application (10.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 223ms (Views: 220.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:42:40 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:42:41 +0100
+
+
+Started POST "/tracks/details?track_id=16" for ::1 at 2015-12-28 15:42:42 +0100
+Processing by TracksController#details as HTML
+  Parameters: {"authenticity_token"=>"XEV4o+IgyvD2HT1FdoFF22FuFchrxzO7STe5LEzGWFq+YoEs8vsO3YS4EngDsRS76itcgTNPP1ma31PZp1YFKA==", "track_id"=>"16"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 16 LIMIT 1
+  Rendered tracks/details.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 180ms (Views: 178.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:42:43 +0100
+
+
+Started GET "/listazeljas/add?track_index=16" for ::1 at 2015-12-28 15:42:44 +0100
+Processing by ListazeljasController#add as HTML
+  Parameters: {"track_index"=>"16"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Load (0.0ms)[0m  SELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mCuvaZapi Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1 AND `cuva_zapis`.`id_zapis` = 16 LIMIT 1[0m
+  [1m[35mCuvaZapi Load (1.0ms)[0m  SELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO `cuva_zapis` (`id_lista`, `mjesto`, `id_zapis`, `created_at`, `updated_at`) VALUES (1, 2, 16, '2015-12-28 14:42:44', '2015-12-28 14:42:44')
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1[0m
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 16 LIMIT 1
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (19.0ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+Completed 200 OK in 226ms (Views: 198.2ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:42:44 +0100
+
+
+Started GET "/listazeljas/delete?id_delete=16" for ::1 at 2015-12-28 15:46:34 +0100
+Processing by ListazeljasController#delete as HTML
+  Parameters: {"id_delete"=>"16"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.5ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (0.5ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Load (8.5ms)[0m  SELECT  `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_zapis` = 16  ORDER BY `cuva_zapis`.`id` ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (17.5ms)[0m  DELETE FROM `cuva_zapis` WHERE `cuva_zapis`.`id` = 3
+  [1m[36m (14.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCuvaZapi Load (11.5ms)[0m  SELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1
+  [1m[36mTrack Load (0.5ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  [1m[35mTrack Load (0.5ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (27.3ms)
+  Rendered auxiliary/_login_modal.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (8.5ms)
+Completed 200 OK in 312ms (Views: 214.2ms | ActiveRecord: 54.6ms)
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 15:46:44 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 194ms (Views: 202.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks/show" for ::1 at 2015-12-28 15:47:38 +0100
+Processing by TracksController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sgLeTHv7/4odFLGRmwUXqpbt/BQARFT1gUpKpBR9YYZQJSfDayA7p2+xnqzuNUbKHai1XVjMWBdSoqBR/+089A==", "search"=>"name", "q"=>"42", "commit"=>"Search"}
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `tracks` WHERE `tracks`.`name` = '42'
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT `tracks`.* FROM `tracks` WHERE `tracks`.`name` = '42'[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/show.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 185ms (Views: 183.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:47:39 +0100
+
+
+Started POST "/tracks/details?track_id=4" for ::1 at 2015-12-28 15:47:42 +0100
+Processing by TracksController#details as HTML
+  Parameters: {"authenticity_token"=>"yCfFc7WO8leTzVZM2TtlzwVzngPaRilsKlo87xP/2JkqADz8pVU2euFoeXGsCzSvjjbXSoLOJY75stYa+G+F6w==", "track_id"=>"4"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1[0m
+  Rendered tracks/details.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.5ms)
+Completed 200 OK in 184ms (Views: 180.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:47:42 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 15:48:49 +0100
+Processing by MainController#home as HTML
+  [1m[36mTrack Load (0.5ms)[0m  [1mSELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_index.html.erb (89.0ms)
+  Rendered main/home.html.erb within layouts/application (94.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 271ms (Views: 267.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 15:48:49 +0100
+
+
+Started GET "/users/1" for ::1 at 2015-12-28 15:48:53 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (11.0ms)
+Completed 200 OK in 196ms (Views: 192.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/playlist.pls" for ::1 at 2015-12-28 16:04:32 +0100
+
+ActionController::RoutingError (No route matches [GET] "/playlist.pls"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (860.1ms)
+
+
+Started GET "/dbdtb" for ::1 at 2015-12-28 16:11:13 +0100
+
+ActionController::RoutingError (No route matches [GET] "/dbdtb"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (796.8ms)
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 16:15:40 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (17.5ms)
+Completed 200 OK in 242ms (Views: 237.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:15:40 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:15:41 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:15:41 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:15:41 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:15:41 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:15:41 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:15:41 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:15:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:15:41 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 16:23:52 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+Completed 200 OK in 229ms (Views: 227.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for ::1 at 2015-12-28 16:23:52 +0100
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 16:24:38 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+Completed 200 OK in 191ms (Views: 189.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:24:39 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:24:42 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (89.1ms)
+  Rendered main/home.html.erb within layouts/application (94.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (8.5ms)
+Completed 200 OK in 287ms (Views: 282.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:24:42 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:24:43 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:24:43 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:24:43 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:24:43 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:24:43 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:25:06 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (0.5ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (110.0ms)
+  Rendered main/home.html.erb within layouts/application (116.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.5ms)
+Completed 200 OK in 313ms (Views: 309.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:25:06 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:25:07 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:25:07 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:25:07 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:25:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:25:07 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:25:21 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (0.5ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (89.0ms)
+  Rendered main/home.html.erb within layouts/application (93.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (9.5ms)
+Completed 200 OK in 291ms (Views: 288.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:25:21 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:25:22 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:27:10 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (91.5ms)
+  Rendered main/home.html.erb within layouts/application (100.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (18.0ms)
+Completed 200 OK in 311ms (Views: 305.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:27:10 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:28:45 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (87.5ms)
+  Rendered main/home.html.erb within layouts/application (92.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (11.0ms)
+Completed 200 OK in 285ms (Views: 280.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:28:46 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:28:48 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (88.5ms)
+  Rendered main/home.html.erb within layouts/application (92.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (12.0ms)
+Completed 200 OK in 338ms (Views: 334.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:28:49 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:29:21 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (87.3ms)
+  Rendered main/home.html.erb within layouts/application (93.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 280ms (Views: 275.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:29:22 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:31:21 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (103.0ms)
+  Rendered main/home.html.erb within layouts/application (111.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 312ms (Views: 309.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:31:22 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:32:07 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (88.0ms)
+  Rendered main/home.html.erb within layouts/application (93.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+Completed 200 OK in 300ms (Views: 296.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:32:07 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:32:08 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:32:22 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (86.5ms)
+  Rendered main/home.html.erb within layouts/application (92.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 272ms (Views: 268.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:32:22 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:33:48 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (0.5ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (92.7ms)
+  Rendered main/home.html.erb within layouts/application (98.7ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 281ms (Views: 278.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:33:48 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:33:49 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:33:49 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:33:49 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:33:49 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:33:49 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:33:49 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:33:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:33:49 +0100
+
+
+Started GET "/users/1" for ::1 at 2015-12-28 16:34:01 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 168ms (Views: 173.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/listazeljas/index?user_id=1" for ::1 at 2015-12-28 16:34:03 +0100
+Processing by ListazeljasController#index as HTML
+  Parameters: {"authenticity_token"=>"FiNrqb0RQB+aPfdoXN1hwp8r60XzeftlM/rkXOYWLB30BJImrcqEMuiY2FUp7TCiFG6iDKvx94fgEg6pDYZxbw==", "user_id"=>"1"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Load (0.0ms)[0m  SELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mCuvaZapi Load (1.0ms)[0m  [1mSELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 1 LIMIT 1[0m
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (16.6ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (7.3ms)
+Completed 200 OK in 211ms (Views: 198.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:34:03 +0100
+
+
+Started GET "/listazeljas/delete?id_delete=1" for ::1 at 2015-12-28 16:34:12 +0100
+Processing by ListazeljasController#delete as HTML
+  Parameters: {"id_delete"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Load (0.0ms)[0m  SELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mCuvaZapi Load (0.0ms)[0m  [1mSELECT  `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_zapis` = 1  ORDER BY `cuva_zapis`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (13.4ms)[0m  [1mDELETE FROM `cuva_zapis` WHERE `cuva_zapis`.`id` = 2[0m
+  [1m[35m (12.1ms)[0m  COMMIT
+  [1m[36mCuvaZapi Load (0.0ms)[0m  [1mSELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1[0m
+  [1m[35mTrack Load (0.0ms)[0m  SELECT  `tracks`.* FROM `tracks` WHERE `tracks`.`id` = 4 LIMIT 1
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered listazeljas/index.html.erb within layouts/application (6.5ms)
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+Completed 200 OK in 220ms (Views: 182.0ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:34:12 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:34:12 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:34:13 +0100
+
+
+Started GET "/listazeljas/delete?id_delete=4" for ::1 at 2015-12-28 16:34:14 +0100
+Processing by ListazeljasController#delete as HTML
+  Parameters: {"id_delete"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (0.5ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Load (0.5ms)[0m  SELECT  `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_zapis` = 4  ORDER BY `cuva_zapis`.`id` ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.5ms)[0m  DELETE FROM `cuva_zapis` WHERE `cuva_zapis`.`id` = 1
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCuvaZapi Load (0.0ms)[0m  SELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1
+  Rendered listazeljas/index.html.erb within layouts/application (0.0ms)
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.2ms)
+Completed 200 OK in 196ms (Views: 174.2ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/listazeljas/potvrdi" for ::1 at 2015-12-28 16:34:16 +0100
+Processing by ListazeljasController#potvrdi as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mListaZelja Exists (0.0ms)[0m  SELECT  1 AS one FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1
+  [1m[36mListaZelja Load (0.0ms)[0m  [1mSELECT  `lista_zeljas`.* FROM `lista_zeljas` WHERE `lista_zeljas`.`id` = 1 LIMIT 1[0m
+  [1m[35mCuvaZapi Load (1.0ms)[0m  SELECT `cuva_zapis`.* FROM `cuva_zapis` WHERE `cuva_zapis`.`id_lista` = 1
+  Rendered listazeljas/index.html.erb within layouts/application (0.5ms)
+  Rendered auxiliary/_login_modal.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.2ms)
+Completed 200 OK in 194ms (Views: 187.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tracks/search" for ::1 at 2015-12-28 16:35:19 +0100
+Processing by TracksController#search as HTML
+  Rendered tracks/search.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (10.5ms)
+Completed 200 OK in 193ms (Views: 192.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:35:19 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:35:23 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (97.5ms)
+  Rendered main/home.html.erb within layouts/application (103.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 303ms (Views: 300.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:35:24 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:37:44 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_index.html.erb (92.1ms)
+  Rendered main/home.html.erb within layouts/application (97.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (11.0ms)
+Completed 200 OK in 291ms (Views: 285.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:37:44 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:37:50 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (92.8ms)
+  Rendered main/home.html.erb within layouts/application (97.8ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 274ms (Views: 270.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:37:50 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:37:51 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:37:57 +0100
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_index.html.erb (95.8ms)
+  Rendered main/home.html.erb within layouts/application (101.8ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+Completed 200 OK in 290ms (Views: 287.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:37:58 +0100
+
+
+Started GET "/" for ::1 at 2015-12-28 16:38:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MainController#home as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT  `tracks`.* FROM `tracks`  ORDER BY `tracks`.`id` ASC LIMIT 16
+  Rendered tracks/_track.html.erb (0.5ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/_index.html.erb (89.3ms)
+  Rendered main/home.html.erb within layouts/application (107.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered auxiliary/_login_modal.html.erb (41.0ms)
+  Rendered layouts/_header.html.erb (102.0ms)
+Completed 200 OK in 714ms (Views: 681.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/account_activation.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/listazeljas.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/modal.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/header.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/main.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/password_reset.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/search.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/session.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/track.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/user.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/account_activation.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/listazeljas.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/main.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/modal.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/password_reset.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/search.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/session.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/track.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/user.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-12-28 16:38:23 +0100

@@ -1,0 +1,50 @@
+<h4><span class="label label-default">Zapisi:</span></h4>
+<br>
+
+<h5><strong>Prikazuje se najviše 16 zapisa.</strong></h5>
+<br>
+
+  <ul class="list-group">
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-sm-3">
+          <h4><span>Naslov</span></h4>
+        </div>
+        <div class="col-sm-3">
+          <h4><span>Autor</span></h4>
+        </div>
+        <div class="col-sm-3">
+          <h4><span>Trajanje</span></h4>
+        </div>
+        <div class="col-sm-3">
+        </div>
+      </div>
+    </li>
+    <% @tracks.each do |track| %>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-sm-3">
+              <span class="glyphicon glyphicon-music"></span>
+              <%=link_to track.name, {:controller => "tracks", :action => :details, :track_id => track.id}, {:method => :post }%>
+            </div>
+            <div class="col-sm-3">
+              <%= track.author %>
+            </div>
+            <div class="col-sm-3">
+              <%= track.minute %> m <%= track.sekunde %> s
+            </div>
+            <div class="col-sm-3">
+              <%= link_to "Obriši", { :controller => "tracks", :action => "delete", :id_delete => track.id},class:"btn btn-danger" %>
+            </div>
+          </div>
+        </li>
+    <% end %>
+    <br>
+    <div class="col-sm-3">
+      <%= link_to "Pretraži pjesme", { :controller => "tracks", :action => "search"},class:"btn btn-primary" %>
+    </div>
+    <div class="col-sm-3">
+      <%= link_to "Dodaj novi glazbeni zapis", { :controller => "tracks", :action => "new"},class:"btn btn-success" %>
+    </div>
+
+  </ul>

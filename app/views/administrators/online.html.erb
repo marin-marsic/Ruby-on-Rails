@@ -1,0 +1,27 @@
+<h4><span class="label label-default">Online korisnici</span></h4><br>
+
+<% if @administratori.empty? then %>
+<span>Trenutno nema aktivnih administratora.</span>
+<% else %>
+<h5><strong>Trenutno aktivnih administratora: <%= @administratori.size %> </strong></h5><p>
+<ul>
+<% @administratori.each do |user| %>
+<li> <strong><%= user.name %></strong> - Zadnja aktivnost prije: <%= ((Time.now - user.activity) / 60).to_i %> minuta. </li>
+<% end %>
+</ul>
+<% end %>
+
+<p>
+
+<% if @korisnici. empty? then %>
+Trenutno nema aktivnih registriranih korisnika.
+<% else %>
+<h5> <strong>Trenutno aktivnih registriranih korisnika : <%= @korisnici.size %> </strong></h5> <p>
+<ul>
+<% @korisnici.each do |user| %>
+<li> <strong><%= user.name %></strong> - Zadnja aktivnost prije: <%= ((Time.now - user.activity) / 60).to_i %> minuta. </li>
+<% end %>
+</ul>
+<% end %>
+<p>
+<%= link_to "Povratak na početnu stranicu", {:controller => "main", :action => :home},class:"btn btn-primary" %>

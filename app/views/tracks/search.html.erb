@@ -1,0 +1,10 @@
+<h3> Pretraga pjesama </h3>
+
+<%= form_tag('show', :method => "post") do %>
+<%= select_tag :search, options_for_select([['Naslov', :name], ['Autor', :author], ['Nakladnik', :company], ['Format', :format], ['Frekvencija', :frekvencija], ['Žanr', :zanr], ['Nosač', :vrsta_nosaca], ['Godina', :godina_izdanja]])%><br/><br>
+<%= label_tag(:q, "Search for:") %><p>
+<%= text_field_tag(:q) %>
+<%= submit_tag("Search") %>
+<% end %>
+
+

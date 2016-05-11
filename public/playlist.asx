@@ -1,0 +1,8 @@
+<ASX version="3.0">
+	<Title>MSS Radio</Title>
+	<Author>Grupa123 Inc.</Author>
+	<Copyright>© 2015. FER</Copyright>
+   <ENTRY>
+      <REF HREF="http://localhost:8100/"/>
+   </ENTRY>
+</ASX>

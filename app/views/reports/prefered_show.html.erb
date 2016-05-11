@@ -1,0 +1,33 @@
+<h4><span class="label label-default">Sklonosti urednika:<%= @urednik.name %></span></h4>
+<br>
+
+    <% if @prefered.empty? then %>
+        Ovaj urednik još nema playlista.
+    <br>
+    <% else %>
+
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-sm-6">Naslov</div>
+          <div class="col-sm-6">Broj reproduciranja</div>
+        </div>
+      </li>
+
+      <% @prefered.each do |key, value| %>
+          <li class="list-group-item">
+            <% @name = key.author + " - " + key.name %>
+            <div class="row">
+              <div class="col-sm-6">
+                <span class="glyphicon glyphicon-music"></span>
+                <%= link_to @name, {:controller => "tracks", :action => "details", :track_id => key.id} %>
+              </div>
+              <div class="col-sm-6"><%= value %></div>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+<% end %>
+<br><%= link_to "Povratak na izbornik", { :controller => "reports", :action => "show"},class:"btn btn-primary" %>
+
+

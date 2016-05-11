@@ -1,0 +1,33 @@
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="loginmodal-container">
+      <h1>Prijava</h1><br>
+
+      <%= form_for(:session, url: login_path,remote: true) do |f| %>
+          <div class="input-group">
+            <span class="glyphicon glyphicon-user input-group-addon"></span>
+            <%= f.text_field :name,:placeholder=> "Korisnicko ime" , class: 'form-control' %>
+          </div>
+          </br>
+          <div class="input-group">
+            <span class="glyphicon glyphicon-lock input-group-addon"></span>
+            <%= f.password_field :password, :placeholder=> "Sifra", class: 'form-control' %>
+          </div>
+          </br>
+
+          <div class="remember-me">
+            <%= f.label :remember_me, class: "checkbox inline" do %>
+                <%= f.check_box :remember_me %>
+                <span>Zapamti me</span>
+            <% end %>
+          </div>
+
+          <%= f.submit "Prijavi se", class: "login loginmodal-submit" %>
+      <% end %>
+
+      <div class="login-help">
+        <%= link_to 'Zaboravili ste lozinku', new_password_reset_path %>
+      </div>
+    </div>
+  </div>
+</div>

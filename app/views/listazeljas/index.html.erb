@@ -1,0 +1,33 @@
+<h4> <span class="label label-default"> Lista želja: </span> </h4>
+
+
+<br>
+<ul class="list-group">
+
+  <% @pjesmeZelja.each do |zapis| %>
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-sm-6">
+            <span class="glyphicon glyphicon-user"></span>
+            <% @name = zapis.author + " - " + zapis.name %>
+            <%= link_to @name, {:controller => "tracks", :action => "details", :track_id => zapis.id} %>
+          </div>
+          <% if !@potvrden then %>
+              <div class="col-sm-6">
+                <%= link_to "Izbriši", {:controller => "listazeljas", :action => "delete", :id_delete => zapis.id},class:"btn btn-danger"%>
+              </div>
+          <% end %>
+        </div>
+
+      </li>
+  <% end %>
+</ul>
+<% if @lista_zelja.potvrden then %>
+    </br>
+    <strong>Lista želja je potvrđena. Novu ćete moći napraviti sutra.</strong>
+<% else %>
+    <%= link_to "Dodaj pjesmu na listu želja", { :controller => "tracks", :action => "search"},class:"btn btn-primary" %>
+
+    <%= link_to "Potvrdi listu želja", { :controller => "listazeljas", :action => "potvrdi"},class:"btn btn-success" %>
+
+<% end %>

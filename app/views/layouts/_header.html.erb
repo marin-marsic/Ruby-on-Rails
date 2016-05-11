@@ -1,0 +1,76 @@
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <%= link_to "Mi samo sviramo",root_path, class: "navbar-brand" %>
+      </div>
+
+      <a href="player.html" onclick="window.open(this.href, 'MSS player', 'height=200, width=380, resizable=false'); return false;" class="navbar-brand">
+
+        <span>Slušaj!</span>
+
+      </a>
+
+      <div>
+        <ul class="nav navbar-nav navbar-right">
+          <% if logged_in? %>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <%= current_user.name %> <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Profil", current_user %></li>
+                  <li><%= link_to "Postavke", edit_user_path(current_user) %></li>
+                  <% if current_user.uloga == 1 %>
+                      <li class="divider"></li>
+                      <li><%= link_to "Uredi urednike", { :controller => "administrators", :action => "index"} %></li>
+                      <li><%= link_to "Uredi zapise", { :controller => "tracks", :action => "index"} %></li>
+                      <li><%= link_to "Uredi korisnike", { :controller => "administrators", :action => "search"} %></li>
+                      <li><%= link_to "Online korisnici", { :controller => "administrators", :action => "online"} %></li>
+                      <li><%= link_to "Izvještaji", { :controller => "reports", :action => "show"} %> </li>
+                  <% end %>
+                  <% if current_user.uloga == 4 %>
+                      <li class="divider"></li>
+                      <li><%= link_to "Uredi administratore", { :controller => "vlasniks", :action => "index"} %> </li>
+                      <li><%= link_to "Uredi podatke o postaji", { :controller => "vlasniks", :action => "info"} %> </li>
+                      <li><%= link_to "Online korisnici", { :controller => "administrators", :action => "online"} %></li>
+                      <li><%= link_to "Izvještaji", { :controller => "reports", :action => "show"} %> </li>
+                  <% end %>
+                  <% if current_user.uloga == 2 %>
+                      <li class="divider"></li>
+                      <li><%= link_to "Uredi playliste", {:controller => "playlists", :action => :show} %> </li>
+                  <% end %>
+                  <% if current_user.uloga == 3 %>
+                      <li class="divider"></li>
+                      <li><%= link_to "Uredi listu želja", {:controller => "listazeljas", :action => :index, :user_id => current_user.id}, {:method => :post} %></li>
+                  <% end %>
+                  <li class="divider"></li>
+                  <li>
+                    <%= link_to "Odjavi se", logout_path, method: "delete" %>
+                  </li>
+                </ul>
+             </li>
+         <% else %>
+            <li><%= link_to signup_path do %>
+                  <i class="glyphicon glyphicon-user"></i>
+                  <span>Registriraj se</span>
+            <% end %>
+            </li>
+            <li><%= link_to '#', data: {toggle: "modal", target: "#login-modal"}  do %>
+                  <i class="glyphicon glyphicon-log-in"></i>
+                  <span>Prijava</span>
+            <% end %>
+            </li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="sidebar"></div>
+<div class="sidebar2"></div>
+
+
+<%= render 'auxiliary/login_modal' %>
+

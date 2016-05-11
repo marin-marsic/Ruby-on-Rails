@@ -1,0 +1,76 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$bgDefault      : #e74c3c;
+$bgHighlight    : #c0392b;
+$colDefault     : #ecf0f1;
+$colHighlight       : #ffbbbc;
+
+.navbar-default {
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.navbar-default {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus {
+      color: $colHighlight;
+    }
+  }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        &:hover, &:focus {
+          color: $colHighlight;
+        }
+      }
+    }
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight;
+      }
+    }
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight;
+      }
+    }
+  }
+}
+
+body {
+  background-color: #ffffff
+}
+
+.glyphicon {
+  padding-right: 5px;
+}
+
+.sidebar {
+  position:fixed;
+  top:0px; bottom:0; right:0;
+  width:30px;
+  background-color: #e74c3c
+}
+
+.sidebar2 {
+  position:fixed;
+  top:0px; bottom:0; left:0;
+  width:30px;
+  background-color: #e74c3c
+}
+
+.footer {
+ margin-top: 400px ;
+text-align: center ;
+width: 100% ;
+height: 30px ;
+opacity: 0.6
+}
+

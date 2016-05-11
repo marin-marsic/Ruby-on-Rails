@@ -1,0 +1,54 @@
+<h4><span class="label label-default">Detaljnije o pjesmi</span></h4>
+<br>
+
+<div class = "well">
+  <table style="width:30%">
+    <tr>
+      <td>Naslov:</td>
+      <td><%= @track.name %></td>
+    </tr>
+    <tr>
+      <td>Autor:</td>
+      <td><%= @track.author %></td>
+    </tr>
+    <tr>
+      <td>Nakladnik:</td>
+      <td><%= @track.company %></td>
+    </tr>
+    <tr>
+      <td>Format:</td>
+      <td><%= @track.format %></td>
+    </tr>
+    <tr>
+    <td>Frekvencija:</td>
+    <td><%= @track.frekvencija %></td>
+    </tr>
+    <tr>
+      <td>Žanr:</td>
+      <td><%= @track.zanr %></td>
+    </tr>
+    <tr>
+      <td>Nosač zvuka:</td>
+      <td><%= @track.vrsta_nosaca %></td>
+    </tr>
+    <tr>
+      <td>Godina izdanja:</td>
+      <td><%= @track.godina_izdanja %></td>
+    </tr>
+    <tr>
+      <td>Trajanje:</td>
+      <td>
+        <%= @track.minute %>
+        m
+        <%= @track.sekunde %>
+        s
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<p>
+  <% if current_user.uloga == 1 then %>
+      <%= link_to "Uredi", {:controller => "tracks", :action => :edit, :id => @track.id} %>
+  <% end %>

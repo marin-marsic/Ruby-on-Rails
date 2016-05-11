@@ -1,0 +1,45 @@
+<h4> <span class="label label-default"> Glazbeni urednici: </span> </h4>
+
+      <% if @urednici.size == 0 %>
+    <h3>Trenutno nema postojećih urednika</h3>
+      <% end %>
+
+<br>
+<ul class="list-group">
+
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4><span>Urednik</span></h4>
+      </div>
+      <div class="col-sm-4">
+        <h4><span >Urednik</span></h4>
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+    </div>
+
+  </li>
+
+  <% @urednici.each do |zapis| %>
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-user"></span>
+            <%= link_to zapis.name, {:controller => "users", :action => :show, :id => zapis.id} %>
+          </div>
+          <div class="col-sm-4">
+            <%= zapis.termin_urednika.strftime("%H:%M") %>
+          </div>
+          <div class="col-sm-4">
+            <%= link_to "Ukloni", {:controller => "administrators", :action => "delete", :id_delete => zapis.id},class:"btn btn-danger" %>
+          </div>
+        </div>
+
+      </li>
+  <% end %>
+  <br>
+  <%= link_to "Dodaj glazbenog urednika", { :controller => "administrators", :action => "search"},class:"btn btn-success" %> <p>
+
+</ul>

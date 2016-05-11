@@ -1,0 +1,14 @@
+Aktivacija računa
+
+Pozdrav, <%= @user.name %>,
+
+Zatražio si registraciju na najbolji online radio servis. Još samo obavi aktivaciju klikom na ovaj link:
+
+
+<%= link_to "Aktiviraj račun.", edit_account_activation_url(@user.activation_token,
+                                                            email: @user.email) %>
+
+Nadamo se da ćeš uživati slušajući nas.
+
+Lijep pozdrav,
+MSS tim.

@@ -1,0 +1,43 @@
+<h4><span class="label label-default">Pregled želja korisnika</span></h4>
+<br>
+<p>Prikazuju se zelje korisnika unutar zadnja tri dana.</p>
+
+<% if @zelje.empty? then %>
+    Trenutno nema zapisa na listama želja korisnika.
+
+<% else %>
+
+    <ul class="list-group">
+
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-sm-4">Naslov</div>
+          <div class="col-sm-4">Broj zahtjeva</div>
+          <div class="col-sm-4"></div>
+        </div>
+      </li>
+
+      <% @zelje.each do |key, value| %>
+          <li class="list-group-item">
+            <% @name = key.author + " - " + key.name %>
+            <div class="row">
+              <div class="col-sm-4">
+                <span class="glyphicon glyphicon-music"></span>
+                <%= link_to @name, {:controller => "tracks", :action => "details", :track_id => key.id} %>
+              </div>
+              <div class="col-sm-4"><%= value %></div>
+              <div class="col-sm-4">
+                <% if current_user.uloga == 2 then %>
+                    <%= link_to "Dodaj pjesmu", {:controller => "playlists", :action => :add, :track_index => key.id},class:"btn btn-success" %>
+                <% end %>
+
+              </div>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+<% end %>
+
+<% if current_user.uloga == 1 or current_user.uloga == 4 then %>
+    <br><%= link_to "Povratak na izbornik", { :controller => "reports", :action => "show"},class:"btn btn-primary" %>
+<% end %>

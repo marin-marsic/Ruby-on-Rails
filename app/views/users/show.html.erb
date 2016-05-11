@@ -1,0 +1,67 @@
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h4>
+        <span class="label label-default">Korisnik: <%=@user.name %></span>
+        </h4>
+
+    </section>
+  </aside>
+</div>
+<br>
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="glyphicon glyphicon-user"></span>
+    Korisničko ime: <%= @user.name %>
+  </li>
+  <li class="list-group-item">
+    <span class="glyphicon glyphicon-user"></span>
+    Ime: <%= @user.ime.capitalize %>
+  </li>
+  <li class="list-group-item">
+    <span class="glyphicon glyphicon-user"></span>
+  Prezime: <%= @user.prezime.capitalize %>
+</li>
+  <li class="list-group-item">
+    <span class="glyphicon glyphicon-envelope"></span>
+    E-mail: <%= @user.email %>
+  </li>
+  <li class="list-group-item">
+    <span class="glyphicon glyphicon-user"></span>
+    Uloga:  <% if @user.uloga == 3 %>
+        <%= "korisnik" %>
+    <% end %>
+    <% if @user.uloga == 2 %>
+        <%= "urednik" %>
+    <% end %>
+    <% if @user.uloga == 1 %>
+        <%= "administrator" %>
+    <% end %>
+  </li>
+
+    <% if @user.uloga == 2 %>
+      <li class="list-group-item">
+        <span class="glyphicon glyphicon-user"></span>
+        Termin urednika: <%= @user.termin_urednika.strftime("%H:%M") %>
+      </li>
+    <% end %>
+</ul>
+
+
+<% if @current_user.uloga == 1 && @current_user.id != @user.id %>
+<br>
+Promijeni termin glavnog urednika:
+<p>
+  <%= form_for @user, url: {:id => @user.id}, html: { multipart: true } do |f| %>
+      <%= f.time_select :termin_urednika, {minute_step: 60} %>
+      <%= f.submit "Spremi", class: "btn btn-primary" %>
+  <% end %>
+<br><%= link_to "Dodaj za glazbenog urednika", {:controller => "administrators", :action => :add, :user_index => @user.id} %>
+</p>
+<% end %>
+<% if @current_user.uloga == 4 && @current_user.id != @user.id %>
+    <p>
+      <br><%= link_to "Dodaj za administratora", {:controller => "vlasniks", :action => :add, :user_index => @user.id} %>
+    </p>
+<% end %>
+<%= link_to "Uredi", {:controller => "users", :action => :edit, :id => @user.id},class:"btn btn-primary" %>

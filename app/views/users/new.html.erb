@@ -1,0 +1,24 @@
+<h4><span class="label label-default">Registriraj se</span></h4>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+        <%= render 'shared/error_messages' %>
+
+        <%= f.label :name, "Korisničko ime",class:"label label-default" %>
+        <%= f.text_field :name, class: 'form-control' %>
+
+        <%= f.label :prezime,class:"label label-default" %>
+        <%= f.text_field :prezime, class: 'form-control' %>
+
+        <%= f.label :email,class:"label label-default" %>
+        <%= f.email_field :email, class: 'form-control' %>
+
+        <%= f.label :password,"Lozinka",class:"label label-default" %>
+        <%= f.password_field :password, class: 'form-control' %>
+
+        <%= f.label :password_confirmation, "Potvrdi lozinku",class:"label label-default" %>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+        <%= f.submit "Prijavi se", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

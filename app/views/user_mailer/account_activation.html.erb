@@ -1,0 +1,14 @@
+<h1>Aktivacija računa</h1>
+
+<p>Pozdrav, <%= @user.name %>,</p>
+
+<p>Zatražio si registraciju na najbolji online radio servis. Još samo obavi aktivaciju klikom na ovaj link: </p>
+
+
+<%= link_to "Aktiviraj račun.", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %>
+
+<p>Nadamo se da ćeš uživati slušajući nas. </p>
+
+<p>Lijep pozdrav, <br>
+MSS tim.</p>

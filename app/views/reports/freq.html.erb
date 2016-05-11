@@ -1,0 +1,16 @@
+<h4><span class="label label-default">Najtraženiji zapis</span></h4>
+<br>
+
+Izaberite vremenski period za koji želite saznati najtraženiji zahtjev:
+<br><br>
+<%= form_tag('freq_show', :method => "post") do %>
+<b>Početni datum:</b>
+<%= date_select("date_start", "written_start", order: [:day, :month, :year],start_year: 2016,  :discard_hours => true) %>
+<p><p>
+<b>Krajnji datum:</b>
+<%= date_select("date_end", "written_end", order: [:day, :month, :year], start_year: 2016,  :discard_hours => true) %>
+<br>
+  <br>
+<%= submit_tag("Traži",class:"btn btn-success") %>
+<% end %>
+<br><%= link_to "Povratak na izbornik", { :controller => "reports", :action => "show"},class:"btn btn-primary" %>

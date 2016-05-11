@@ -1,0 +1,16 @@
+<h4><span class="label label-default">Sklonosti urednika</span></h4>
+<br>
+
+<b>Izaberite urednika čije vas sklonosti pjesama zanimaju.</b> </br>
+
+<% if @urednici.empty? then %>
+Trenutno nema urednika.
+<% else %>
+<ul>
+<% @urednici.each do |urednik| %>
+<li> <%= link_to urednik.name, {:action => "prefered_show", :id => urednik.id }%> </li>
+
+<% end %>
+</ul>
+<%end%>
+<br><%= link_to "Povratak na izbornik", { :controller => "reports", :action => "show"},class:"btn btn-primary" %>

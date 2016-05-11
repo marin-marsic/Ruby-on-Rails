@@ -1,0 +1,14 @@
+<h4><span class="label label-default">Izvještaji i pregledi</span></h4>
+<br>
+
+<ul>
+	<li> <%= link_to "Reproducirani zapisi", {:controller => "reports", :action => :reproduced}       %> </li>
+	<li> <%= link_to "Sklonosti urednika", {:controller => "reports", :action => :prefered}           %> </li>
+	<li> <%= link_to "Najviše traženi zapisi", {:controller => "playlists", :action => :get_zelje}       %> </li>
+	<li> <%= link_to "Frekvencija najtraženijeg zapisa", {:controller => "reports", :action => :freq} %> </li>
+</ul>
+
+<p>
+<strong><%= link_to "Povratak na početnu stranicu", {:controller => "main", :action => :home},class:"btn btn-primary" %></strong>
+
+

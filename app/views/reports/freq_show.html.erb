@@ -1,0 +1,17 @@
+<h4><span class="label label-default">Najtraženiji zapis</span></h4>
+<br>
+
+<h4><b>Traženi period:</b></h4> <p> <strong>Od: </strong> <%= @date_start.strftime("%d-%m-%y") %> <p>
+<strong>Do:</strong> <%= @date_end.strftime("%d-%m-%y") %><p>
+
+<% if @key.nil? then %>
+U ovom periodu nema zahtjeva na listama želja.
+
+<% else %>
+Najtraženiji zapis u izabranom vremenskom periodu:
+
+  <% @name = @key.author + " - " + @key.name %>
+  <%= link_to @name, {:controller => "tracks", :action => "details", :track_id => @key.id} %> sa <%= @value %> zahtjeva.
+
+<% end %>
+<br><br><%= link_to "Povratak na izbornik", { :controller => "reports", :action => "show"},class:"btn btn-primary" %>

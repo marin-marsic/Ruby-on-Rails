@@ -1,0 +1,25 @@
+<h4><span class="label label-default"> Podaci o radio postaji: </span></h4>
+
+<div class = "well">
+  <%= form_tag "/vlasniks/edit" %>
+  <table style="width:30%">
+    <tr>
+      <td>Naziv:</td>
+      <td><%= text_field_tag :naziv, @naziv %></td>
+    </tr>
+    <tr>
+      <td>Vlasnik</td>
+      <td><%= text_field_tag  :vlasnik, @vlasnik  %></td>
+    </tr>
+    <tr>
+      <td>E-mail:</td>
+      <td><%= text_field_tag :email, @email %></td>
+    </tr>
+    <tr>
+      <td>Telefon:</td>
+      <td><%= text_field_tag :tel, @tel %></td>
+    </tr>
+  </table>
+  <br>
+  <%= submit_tag "Spremi", class: "btn btn-success" %>
+</div>

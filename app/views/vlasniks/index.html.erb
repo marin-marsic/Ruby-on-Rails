@@ -1,0 +1,25 @@
+
+<h4><span class="label label-default"> Trenutni administratori: </span><h4>
+      <br>
+      <% if @administratori.size == 0 %>
+        <h3>Trenutno nema postojećih administratora.</h3>
+      <% end %>
+
+  <ul class="list-group">
+    <% @administratori.each do |zapis| %>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-user"></span>
+          <%= link_to zapis.name, {:controller => "users", :action => :show, :id => zapis.id} %>
+        </div>
+        <div class="col-sm-8">
+          <%= link_to "Ukloni", {:controller => "vlasniks", :action => "delete", :id_delete => zapis.id},class:"btn btn-danger" %>
+        </div>
+      </div>
+
+     </li>
+    <% end %>
+    </ul>
+
+<%= link_to "Dodaj administratore", { :controller => "administrators", :action => "search"},class:"btn btn-info"%>

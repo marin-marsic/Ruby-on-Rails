@@ -1,0 +1,14 @@
+<h4><span class="label label-default">Trenutne playliste</span></h4>
+<br>
+<% if @playliste.nil? then %>
+    Trenutno nemate nijednu playlistu.
+<% else %>
+    <ul>
+      <% @playliste.each do |playlist| %>
+
+          <li><%= link_to playlist.datum_unosa.strftime("%d-%m-%y"), {:controller => "playlists", :action => "index", :id_playlist => playlist.id} %> </li>
+
+      <% end %>
+<% end %>
+<br>
+<%= link_to "Nova playlista", {:controller => "playlists", :action => "new"},class:"btn btn-primary" %>

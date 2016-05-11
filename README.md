@@ -1,4 +1,6 @@
 # Ruby-on-Rails
+01.2016.
+
 Projekt iz predmeta Oblikovanje programske podrške
 
 Web sjedište radio postaje.

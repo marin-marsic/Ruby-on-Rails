@@ -3,7 +3,7 @@ Projekt iz predmeta Oblikovanje programske podrške
 
 Web sjedište radio postaje.
 
-Opis projektnog zadataka
+###Opis projektnog zadataka
 
 Internetska radio postaja „Mi samo sviramo“ ima arhivu tonskih zapisa u nekomprimiranom
 digitalnom formatu. Standardno je korištena frekvencija uzorkovanja 48 kHz uz 24 bitovnu
@@ -21,9 +21,9 @@ biti emitirana. Neregistrirani korisnici vide samo informaciju o tome koji glazb
 trenutno reproducira.Pretpostavlja se da radijska postaja ima uređena prava korištenja i
 reprodukcije svih tonskih zapisa.
 
-Zahtjevi na informacijski sustav
+###Zahtjevi na informacijski sustav
 
-Podaci o tonskom zapisu
+####Podaci o tonskom zapisu
 
 Svaki tonski zapis ima svoje ime, kao i ostale meta podatke, koji uključuju ime izvođača ili
 grupe, trajanje zapisa, format u kojem je spremljen, frekvenciju uzorkovanja, broj bitova
@@ -47,16 +47,16 @@ njegovo ime, prezime, zanimanje i adresa elektroničke pošte.
 Neregistrirani korisnik može vidjeti samo osnovne podatke o internetskoj radio postaji i o
 glazbenom zapisu koji se trenutno reproducira.
 
-Posebne funkcionalnosti sustava
+####Posebne funkcionalnosti sustava
 
-Registracija korisnika
+#####Registracija korisnika
 
 Procedura registracije korisnika predviđa unos podataka korisnika. Nakon registracije,
 korisniku se na njegovu adresu elektroničke pošte šalje pozdravna poruka i traži se potvrda
 „klikom na link“. Nakon što korisnik potvrdi registraciju, na adresu elektroničke pošte šalju
 mu se pristupni podaci za pristup korisničkom dijelu stranice.
 
-Izrada liste za reprodukciju (glazbeni urednik)
+#####Izrada liste za reprodukciju (glazbeni urednik)
 
 Svaki glazbeni urednik ima na raspolaganju tražilicu koja pretražuje sve tonske zapise po
 svim kriterijima. Nakon što tonski urednik odabere neki tonski zapis, on se prebacuje u
@@ -68,7 +68,7 @@ potrebno je listu potvrditi. Nakon potvrde ona se preslikava u cjelodnevnu listu
 radi reprodukcija. Sustav mora kontrolirati zahtjev da u svakom trenutku mora postojati lista
 za reprodukciju za sljedeća 24 sata.
 
-Izrada liste želja
+#####Izrada liste želja
 
 Registrirani korisnici imaju mogućnost izrade liste želja. Registrirani korisnik može pristupiti
 postojećem popisu glazbenih zapisa, i od njih odabrati 10 naslova koje bi htio čuti u sljedeća
@@ -78,14 +78,14 @@ korisnici unijeli, i odgovarajućim brojem zahtjeva za reprodukcijom upravo tog 
 generirana automatska lista želja registriranih korisnika dostupna je i vidljiva svim glazbenim
 urednicima.
 
-Izvještaji i pregledi
+#####Izvještaji i pregledi
 
 Administratori sustava mogu vidjeti izvještaje o tome koji su glazbeni zapisi koliko puta
 reproducirani, koji glazbeni urednik preferira koje zapise, koji su zapisi najviše traženi preko
 liste želja registriranih korisnika, i kolika je frekvencija pojavljivanja najtraženijeg zapisa sa
 liste želja unutar određenog vremenskog intervala.
 
-Ostali zahtjevi i ograničenja sustava
+###Ostali zahtjevi i ograničenja sustava
 
 Sustav mora omogućiti istovremeni rad vlasnika sustava, administratora, glazbenih urednika i
 neograničenog broja registriranih korisnika. Prilikom rada vlasnik i administratori sustava
